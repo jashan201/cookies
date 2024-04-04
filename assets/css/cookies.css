@@ -1,0 +1,174 @@
+@charset "utf-8";
+
+:root {
+    --app-background-dark: rgb(24, 23, 32);
+}
+  
+body {
+    background-color: var(--app-background-dark);
+    display: flex;
+    justify-content: center;
+    place-items: center;
+    position: relative;
+}
+
+.container {
+    width: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container p {
+    color: #fff;
+    font-size: 40px;
+}
+
+.purple {
+    color: rgb(165, 7, 165);
+}
+
+.orange {
+    color: rgb(240, 95, 5);
+}
+
+.green {
+    color: rgb(3, 144, 3);
+}
+
+/* ----------------------------- */
+/*    cookies container          */
+/* ----------------------------- */
+
+.cookie-div {
+    width: 250px;
+    height: 270px;
+    background-color: #d2cece;
+    padding: 30px 20px;
+    border-radius: 6px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -40%);
+    transition: .4s;
+}
+
+.cookies-container {
+    display: none;
+}
+
+#buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.accept {
+    background-color: rgb(18, 67, 135);
+    width: 250px;
+    height: 30px;
+    border-radius: 50px;
+    color: #fff;
+}
+
+.settings {
+    border: 2px solid rgb(18, 67, 135);
+    width: 250px;
+    border-radius: 50px;
+}
+
+/* ----------------------------- */
+/*    cookies container          */
+/* ----------------------------- */
+
+.cookies-settings {
+    display: none;
+}
+
+.cookies-settings h2 {
+    margin-bottom: 10px;
+}
+
+.options {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+#save-settings {
+    margin-top: 10px;
+    width: 100%;
+    height: 30px;
+    border-radius: 50px;
+    background-color: rgb(18, 67, 135);
+    color: #fff;
+}
+
+
+/* ------------------------- */
+/*       toggle switch       */
+/* ------------------------- */
+
+/* The switch - the box around the slider */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 25px;
+}
+  
+  /* Hide default HTML checkbox */
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+  
+  /* The slider */
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+  
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 20px;
+    width: 20px;
+    left: 1px;
+    bottom: 2.5px;
+    background-color: white;
+    -webkit-transition: .2s;
+    transition: .2s;
+}
+  
+input:checked + .slider {
+    background-color: rgb(18, 67, 135);
+}
+  
+input:focus + .slider {
+    box-shadow: 0 0 1px rgb(18, 67, 135);
+}
+  
+input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+  
+  /* Rounded sliders */
+.slider.round {
+    border-radius: 34px;
+    border: 1px solid rgb(18, 67, 135);
+}
+  
+.slider.round:before {
+    border-radius: 50%;
+}

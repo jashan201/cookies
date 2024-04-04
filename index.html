@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en" dir ="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name ="author" content = "Jashanpreet">
+    <meta name = "description" content = "Webpage">
+    <meta name = "keywords" content ="html, css, web, web development, javascript">
+    <title>cookies</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/mrspecht/cdn/reset.css">
+    <link rel="stylesheet" href="./assets/css/cookies.css">
+    <script type="module" src="./assets/js/cookies.js" type="module"></script>
+  </head>
+  <body>
+      <main>
+        <div class="container">
+            <p>
+                A <span class="purple">cookie</span> is a small piece of text sent
+                to your browser by a website you visit. It helps the site remember
+                <span class="orange">information</span> about your visit, which
+                can make it easier to visit the site again and make the site more
+                <span class="green">useful</span> to you.
+            </p>
+        </div>
+        <div class="blur"></div>
+        <div class="cookies-container cookie-div">
+            <h2>Cookies</h2>
+            <p>This site uses cookies to improve your experience on our website.
+                Click 'accept' to agree to the cookies. For more, click 'settings'. 
+            </p>
+            <section id="buttons">
+                <button class="accept">Accept</button>
+                <button class="settings">Settings</button>
+            </section>
+        </div>
+        <div class="cookies-settings cookie-div">
+            <h2>Settings</h2>
+            <div class="browser options">
+                <h3>Browser</h3>
+                <label class="switch">
+                    <input type="checkbox">
+                    <span class="slider round"></span>
+                </label>
+            </div>
+            <div class="operating-system options">
+                <h3>Operating system</h3>
+                <label class="switch">
+                    <input type="checkbox">
+                    <span class="slider round"></span>
+                </label>
+            </div>
+            <div class="screen-width options">
+                <h3>Screen width</h3>
+                <label class="switch">
+                    <input type="checkbox">
+                    <span class="slider round"></span>
+                </label>
+            </div>
+            <div class="screen-height options">
+                <h3>Screen height</h3>
+                <label class="switch">
+                    <input type="checkbox">
+                    <span class="slider round"></span>
+                </label>
+            </div>
+            <button id="save-settings">Save preferences</button>
+        </div>
+      </main>
+  </body>
+</html>
